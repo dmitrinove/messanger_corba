@@ -1,0 +1,8 @@
+
+project {
+    after += IDL
+    specific {
+        compile_option  += -classpath ../IDL/IDL.jar:.
+    }
+}
+

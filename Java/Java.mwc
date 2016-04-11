@@ -1,0 +1,9 @@
+
+workspace {
+    specific {
+        cmdline += -language java
+        IDL
+        client
+    }
+}
+

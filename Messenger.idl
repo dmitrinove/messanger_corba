@@ -1,0 +1,5 @@
+
+interface Messenger {
+    boolean string_op(in string s_in, inout string s_inout, out string s_out);
+};
+

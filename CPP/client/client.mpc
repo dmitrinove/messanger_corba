@@ -1,0 +1,11 @@
+
+project : taoexe, anytypecode {
+	after += IDL
+
+	includes += ../IDL
+	Source_Files {
+		client.cpp
+        ../IDL/MessengerC.cpp
+	}
+}
+

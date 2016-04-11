@@ -1,0 +1,26 @@
+
+project {
+    Define_Custom(JAVA_IDL) {
+        command  = idlj -fall
+        inputext = .idl
+    }
+    
+    JAVA_IDL_Files {
+        // server and client:  Messenger.java, MessengerOperations.java
+        // server only:  MessengerPOA.java
+        // client only:  MessengerHelper.java, MessengerHolder.java, _MessengerStub.java
+        ../../Messenger.idl >> Messenger.java \
+            MessengerHelper.java \
+            MessengerHolder.java \
+            MessengerOperations.java \
+            MessengerPOA.java \
+            _MessengerStub.java
+
+    }
+    
+    specific {
+        // to provide more info on unchecked calls in generated code
+        compile_option  += -Xlint:unchecked
+    }
+}
+

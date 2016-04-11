@@ -1,0 +1,12 @@
+
+project : taoserver {
+	after += IDL
+
+	includes += ../IDL
+	Source_Files {
+		server.cpp
+		../IDL/MessengerC.cpp
+		../IDL/MessengerS.cpp
+	}
+}
+

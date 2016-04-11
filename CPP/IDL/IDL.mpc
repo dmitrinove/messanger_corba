@@ -1,0 +1,8 @@
+
+project : taoidldefaults {
+	IDL_Files {
+		../../Messenger.idl
+	}
+	custom_only = 1
+}
+
